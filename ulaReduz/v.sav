@@ -1,0 +1,65 @@
+[*]
+[*] GTKWave Analyzer v3.3.37 (w)1999-2012 BSI
+[*] Wed Oct 29 18:56:29 2014
+[*]
+[dumpfile] "/home/roberto/digital/adm/trab/v_reduz.vcd"
+[dumpfile_mtime] "Wed Oct 29 18:38:33 2014"
+[dumpfile_size] 56266
+[savefile] "/home/roberto/digital/adm/trab/v.sav"
+[timestart] 20550000
+[size] 1240 748
+[pos] -1 -1
+*-21.000000 24670000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 210
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 206
+@28
+rst
+rel
+@200
+-  file read
+@28
+u_read_input.eof
+@22
+u_read_input.data[31:0]
+u_reduz.valor[31:0]
+@28
+u_reduz.ea[2:0]
+@200
+-
+-   reduz
+@22
+u_reduz.opcode[31:0]
+@24
+u_reduz.num[31:0]
+@22
+u_reduz.alfa[31:0]
+u_reduz.beta[31:0]
+u_reduz.delta[31:0]
+u_reduz.saida[31:0]
+@200
+-
+@22
+u_reduz.inp_beta[31:0]
+u_reduz.init[31:0]
+@200
+-
+@24
+u_reduz.ea[2:0]
+@28
+u_reduz.ld_alfa
+@29
+u_reduz.ld_beta
+@28
+u_reduz.clr_beta
+u_reduz.ld_oper
+u_reduz.ld_tam
+u_reduz.en_dec
+u_reduz.sel
+u_reduz.sync
+u_reduz.fim
+@24
+u_reduz.pe[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

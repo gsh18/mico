@@ -1,0 +1,44 @@
+
+void main(void) {
+	int M[16][16];						0x00		ld r4 <- 0x0100(r1)	// Matriz
+	int r; 							0x01 		addi r5 <- r1 + 0	// inicializa r5
+	init(M,16);						0x02 		jal init		// chama funcao init
+								0x03		jal diag		// chama funcao diag
+	r = diag(M, 16);					0x04		addi r5,v0,0		// r = diag()
+	display(r);						0x05		show r5			// mostra r
+}
+
+
+void init(int **mat,in sz) {
+	for (i = 0; i<sz; i++)						
+								0x06	init	addi r6,r0,0		// i = 0
+								0x07	addi 	r7,r0,0 		// j = 0
+								0x08	addi 	r8,r0,16	 	// sz
+								
+								0x09    for1:    beq r6,r8, exit	// i < sz ?
+								0x0a		addi r6,r6,1		// i++
+		for( j = 0; j< 16; j++)
+								0x0b	for2:	beq,r7,r8,for1		// j < sz ?
+								0x0c 		addi r4, r4, 4		// r4 + 4
+								0x0d		add r9,r6,r7 	     	// i + j 
+								0x0e		st r9, 0(r4)	     	// P DAR BOA NA MATRIZ(DEVE TER MUL)
+			mat[i][j] = i + j			0x10		addi r7,r7,1		// j++
+								0x11 		beq r0,r0,for2		// loop
+}								0x12 	exit: 	jr r15 			// volta p main 
+									
+int diag(int **may, int sz) { 
+	s = 0;							0x13	diag:	addi r7,r0,0		// r7 = 0 
+								0x14 		addi r6,r0,0        	// r6 = 0
+								0x15		ld r4 <- 0x0100(r0) 	// recebe M
+								0x16		addi r3,r0,16	    	// r3 = 16
+								0x17		addi r5,r0, 4	    	// r5 = 4
+								0x18 		mul r2,r3,r5	    	// 16 * 4
+								
+	for (i = 0; i< 16; i++ )				0x19 	for3: 	beq r6,r8, exit		// i < sz ?
+		s = s + mat[i][j]				0x1a  		ld r8,0(r4)		// r4[0]
+	return(s)						0x1b		add r7,r7,r4        	// s + M
+								0X1c		addi r6,r6,1       	// i++		
+								0x1d		add r4,r4,r2        	// M++
+								0x1e		beq r0,r0,for3		// loop
+								0x1e    exit:   add v0,r0,r7        	// return s
+}								0x1f 	      	jr r15			// retorna pra main

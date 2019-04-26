@@ -1,0 +1,75 @@
+v 3
+file . "mico.vhd" "20181120195509.000" "20181120175829.949":
+  entity mico at 9( 405) + 0 on 512;
+  architecture functional of mico at 18( 551) + 0 on 513;
+  entity counter at 195( 7102) + 0 on 514;
+  architecture funcional of counter at 207( 7395) + 0 on 515;
+  entity ula at 235( 8045) + 0 on 516;
+  architecture behaviour of ula at 243( 8178) + 0 on 517;
+  entity display at 301( 10115) + 0 on 518;
+  architecture functional of display at 310( 10285) + 0 on 519;
+  entity ram at 332( 10949) + 0 on 520;
+  architecture rtl of ram at 349( 11395) + 0 on 521;
+  entity r at 415( 13136) + 0 on 522;
+  architecture rtl of r at 425( 13363) + 0 on 523;
+file . "aux.vhd" "20181120133446.000" "20181120175829.249":
+  entity inv at 12( 440) + 0 on 462;
+  architecture comport of inv at 20( 561) + 0 on 463;
+  entity and2 at 29( 895) + 0 on 464;
+  architecture and2 of and2 at 37( 1054) + 0 on 465;
+  entity or2 at 46( 1369) + 0 on 466;
+  architecture comport of or2 at 54( 1494) + 0 on 467;
+  entity or3 at 63( 1848) + 0 on 468;
+  architecture or3 of or3 at 71( 2013) + 0 on 469;
+  entity xor2 at 80( 2330) + 0 on 470;
+  architecture comport of xor2 at 87( 2423) + 0 on 471;
+  entity xnor32 at 97( 2791) + 0 on 472;
+  architecture behaviour of xnor32 at 104( 2892) + 0 on 473;
+  entity xor3 at 194( 6010) + 0 on 474;
+  architecture xor3 of xor3 at 202( 6180) + 0 on 475;
+  entity mux2 at 213( 6494) + 0 on 476;
+  architecture estrut of mux2 at 221( 6610) + 0 on 477;
+  entity mux32x2 at 250( 7474) + 0 on 478;
+  architecture behaviour of mux32x2 at 258( 7643) + 0 on 479;
+  entity mux32x4 at 273( 8006) + 0 on 480;
+  architecture behaviour of mux32x4 at 281( 8191) + 0 on 481;
+  entity mux16x4 at 297( 8610) + 0 on 482;
+  architecture behaviour of mux16x4 at 305( 8795) + 0 on 483;
+  entity mux16x2 at 321( 9214) + 0 on 484;
+  architecture behaviour of mux16x2 at 329( 9398) + 0 on 485;
+  entity extender at 344( 9780) + 0 on 486;
+  architecture behaviour of extender at 351( 9939) + 0 on 487;
+  entity registern at 380( 10557) + 0 on 488;
+  architecture functional of registern at 391( 10847) + 0 on 489;
+  entity count16up at 413( 11461) + 0 on 490;
+  architecture funcional of count16up at 422( 11696) + 0 on 491;
+  entity count32dwn at 447( 12376) + 0 on 492;
+  architecture funcional of count32dwn at 456( 12613) + 0 on 493;
+  entity registrador32 at 481( 13289) + 0 on 494;
+  architecture funcional of registrador32 at 489( 13451) + 0 on 495;
+  entity registrador20 at 510( 14016) + 0 on 496;
+  architecture funcional of registrador20 at 518( 14178) + 0 on 497;
+  entity ffd at 539( 14732) + 0 on 498;
+  architecture funcional of ffd at 546( 14852) + 0 on 499;
+  entity ffdqq at 570( 15444) + 0 on 500;
+  architecture funcional of ffdqq at 577( 15574) + 0 on 501;
+  entity addbit at 604( 16257) + 0 on 502;
+  architecture estrutural of addbit at 611( 16466) + 0 on 503;
+  entity addercadeia at 641( 17519) + 0 on 504;
+  architecture addercadeia of addercadeia at 651( 17734) + 0 on 505;
+  entity addercadeia16 at 706( 20526) + 0 on 506;
+  architecture addercadeia16 of addercadeia16 at 716( 20745) + 0 on 507;
+  entity m_p_1 at 753( 22492) + 0 on 508;
+  architecture funcional of m_p_1 at 761( 22764) + 0 on 509;
+  entity mult32x32 at 785( 23393) + 0 on 510;
+  architecture estrutural of mult32x32 at 797( 23788) + 0 on 511;
+file . "packageWires.vhd" "20181108181133.000" "20181120175829.008":
+  package p_wires at 8( 269) + 0 on 458 body;
+  package body p_wires at 81( 3304) + 0 on 459;
+file . "mem.vhd" "20181120195827.000" "20181120175829.166":
+  entity mem_prog at 5( 229) + 0 on 460;
+  architecture tabela of mem_prog at 196( 5719) + 0 on 461;
+file . "tb_mico.vhd" "20181108181133.000" "20181120175830.380":
+  entity tb_mico at 8( 404) + 0 on 524;
+  architecture tb of tb_mico at 13( 459) + 0 on 525;
+  configuration cfg_tb at 46( 1266) + 0 on 526;

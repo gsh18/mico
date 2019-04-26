@@ -1,0 +1,29 @@
+## UFPR, BCC, ci210 2014-2 trabalho semestral, autor: Roberto Hexsel, 29out
+
+
+run.sh -- O script run.sh compila e executa a simulação.  Diga ./run.sh -h
+para ver os argumentos de linha de comando.
+ESTE ARQUIVO NÃO PODE SER ALTERADO.
+
+
+aux.vhd -- código VHDL com portas lógicas, FFs, registradores.
+ESTE ARQUIVO NÃO PODE SER ALTERADO.
+
+
+reduz.vhd -- seu código para o modelo do circuito de reduções deve
+ser inserido neste arquivo.
+
+
+packageWires.vhd -- código VHDL com definições para o testbench.
+ESTE ARQUIVO NÃO PODE SER ALTERADO.
+
+
+files.vhd -- código VHDL que lê um arquivo e que escreve na saída padrão.
+ESTE ARQUIVO NÃO PODE SER ALTERADO.
+
+
+tb_reduz.vhd -- testbench completo para testar o circuito de reduções.  O
+programa efetua a leitura do arquivo de entrada e inicia as reduções.  Não
+é uma boa ideia alterar este arquivo.
+
+v.sav  -- configuração do gtkwave para desenvolvimento da transmissão
